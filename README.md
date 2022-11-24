@@ -6,13 +6,11 @@
 
 ### Categories
 
-* [Algorithm](#ack)
+* [Algorithm](#Algorithm)
 * [Deploy](#amplify)
 
 ---
 
 ### Algorithm
 
-- [ack --bar](ack/ack-bar.md)
-- [Case-Insensitive Search](ack/case-insensitive-search.md)
-- [List Available File Types](ack/list-available-file-types.md)
+- [big-O](Algorithm/big-O.md)

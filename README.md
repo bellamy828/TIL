@@ -7,7 +7,7 @@
 ### Categories
 
 * [Algorithm](#Algorithm)
-* [Deploy](#amplify)
+* [Deploy](#Deploy)
 
 ---
 

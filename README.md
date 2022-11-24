@@ -13,4 +13,4 @@
 
 ### Algorithm
 
-- [big-O](Algorithm/big-O.md)
+- [Big-O](Algorithm/big-O.md)

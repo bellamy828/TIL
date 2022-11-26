@@ -17,4 +17,4 @@
 
 ### Deploy
 
-- [Deploy]
+- [Build And Deploy](Deploy/Build-and-Deploy.md)

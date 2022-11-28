@@ -17,7 +17,7 @@
 ### Algorithm
 
 - [Big-O](Algorithm/Big-O.md)
-- [How to study algorithms(Algorithm/How-to-study-algorithms.md)
+- [How to study algorithms](Algorithm/How-to-study-algorithms.md)
 
 ### Deploy
 

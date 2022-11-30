@@ -11,6 +11,7 @@
 
 * [Algorithm](#Algorithm)
 * [Deploy](#Deploy)
+* [Python](#Python)
 
 ---
 

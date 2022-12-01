@@ -26,4 +26,4 @@
 
 ### Python
 
-- [Python]
+- [Python Intro](Python/01-Python-Intro.md)

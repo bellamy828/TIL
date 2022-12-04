@@ -27,3 +27,4 @@
 ### Python
 
 - [Python Intro](Python/01-Python-Intro.md)
+- [Data types - Number](Python/02-1-Data-types-Number.md)

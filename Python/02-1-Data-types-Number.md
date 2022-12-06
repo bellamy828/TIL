@@ -128,3 +128,7 @@
 1.75에서 몫에 해당되는 정수값 1만 리턴하는 것을 확인할 수 있다.
 
 ![https://wikidocs.net/images/page/12/%E1%84%86%E1%85%A9%E1%86%AA.png](https://wikidocs.net/images/page/12/%E1%84%86%E1%85%A9%E1%86%AA.png)
+
+<br>
+
+출처: 점프 투 파이썬 01장 파이썬이란 무엇인가? - 박응용

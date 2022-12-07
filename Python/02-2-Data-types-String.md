@@ -1,6 +1,4 @@
-## 2-2.  문자열(String)
-
-## **문자열은 어떻게 만들고 사용할까?**
+# 2-2.  문자열(String)
 
 파이썬에서 문자열을 만드는 방법은 총 4가지이다.
 
@@ -101,16 +99,10 @@ SyntaxError: invalid syntax
 
 ### **여러 줄인 문자열을 변수에 대입하고 싶을 때**
 
-문자열이 항상 한 줄 짜리만 있는 것은 아니다. 
-
-다음과 같이 여러 줄의 문자열을 변수에 대입하려면 어떻게 처리해야 할까?
-
 ```
 Life is too short
 You need python
 ```
-
-<br>
 
 **1. 줄을 바꾸기 위한 이스케이프 코드 `\n` 삽입하기**
 
@@ -165,6 +157,8 @@ You need python
 이스케이프 코드란 프로그래밍할 때 사용할 수 있도록 미리 정의해 둔 "문자 조합"이다. 
 
 주로 출력물을 보기 좋게 정렬하는 용도로 사용한다. 
+
+<img width="372" alt="image" src="https://user-images.githubusercontent.com/72433598/206212621-2f7af52e-78e2-4a07-b7d0-782530edace3.png">
 
 이중에서 활용빈도가 높은 것은 `\n`, `\t`, `\\`, `\'`, `\"`이다.
 
@@ -253,9 +247,9 @@ Life is too short, You need Python
 'e'
 ```
 
-### **문자열 인덱싱 활용하기**
+<br>
 
-인덱싱 예를 몇 가지 더 보자.
+### **문자열 인덱싱 활용하기**
 
 ```
 >>> a = "Life is too short, You need Python"
@@ -268,7 +262,7 @@ Life is too short, You need Python
 
 ```
 
-즉 a[-1]은 뒤에서부터 세어 첫 번째가 되는 문자를 말한다. 
+a[-1]은 뒤에서부터 세어 첫 번째가 되는 문자를 말한다. 
 
 a의 값은 "Life is too short, You need Python" 문자열이므로 
 
@@ -290,7 +284,7 @@ a의 값은 "Life is too short, You need Python" 문자열이므로
 
 ### **문자열 슬라이싱이란?**
 
-그렇다면 "Life is too short, You need Python" 문자열에서 'Life' 또는 'You' 같은 단어를 뽑아내는 방법은 없을까?
+"Life is too short, You need Python" 문자열에서 'Life' 또는 'You' 같은 단어를 뽑아내기 
 
 다음과 같이 하면 된다.
 
@@ -377,8 +371,6 @@ a[시작 번호:끝 번호]에서 시작 번호와 끝 번호를 생략하면 �
 
 ### **슬라이싱으로 문자열 나누기**
 
-다음은 자주 사용하게 되는 슬라이싱 기법 중 하나이다.
-
 ```
 >>> a = "20010331Rainy"
 >>> date = a[:8]
@@ -404,7 +396,7 @@ a[시작 번호:끝 번호]에서 시작 번호와 끝 번호를 생략하면 �
 'Rainy'
 ```
 
-**점프 투 파이썬["Pithon"이라는 문자열을 "Python"으로 바꾸려면?]**
+**"Pithon"이라는 문자열을 "Python"으로 바꾸려면?**
 
 Pithon 문자열을 Python으로 바꾸려면 어떻게 해야 할까? 제일 먼저 떠오르는 생각은 다음과 같을 것이다.
 

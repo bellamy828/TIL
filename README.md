@@ -29,3 +29,4 @@
 - [Python Intro](Python/01-Python-Intro.md)
 - [Data types - Number](Python/02-1-Data-types-Number.md)
 - [Data types - String](Python/02-2-Data-types-String.md)
+- [Data types - List](Python/02-3-Data-types-List.md)

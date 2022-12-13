@@ -31,3 +31,4 @@
 - [Data types - String](Python/02-2-Data-types-String.md)
 - [Data types - List](Python/02-3-Data-types-List.md)
 - [Data types - Tuple](Python/02-4-Data-types-Tuple.md)
+- [Data types - Dictionary](Python/02-5-Data-types-Dictionary.md)

@@ -32,3 +32,5 @@
 - [Data types - List](Python/02-3-Data-types-List.md)
 - [Data types - Tuple](Python/02-4-Data-types-Tuple.md)
 - [Data types - Dictionary](Python/02-5-Data-types-Dictionary.md)
+- [Data types - Set](Python/02-6-Data-types-Set.md)
+

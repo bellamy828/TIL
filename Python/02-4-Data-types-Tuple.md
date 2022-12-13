@@ -9,7 +9,7 @@
 
 튜플의 모습은 다음과 같다.
 
-```
+```python
 >>> t1 = ()
 >>> t2 = (1,)
 >>> t3 = (1, 2, 3)
@@ -38,12 +38,12 @@
 
 **1. 튜플 요솟값을 삭제하려 할 때**
 
-```
+```python
 >>> t1 = (1, 2, 'a', 'b')
 >>>del t1[0]
 ```
 
-```
+```python
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: 'tuple' object doesn't support item deletion
@@ -53,12 +53,12 @@ TypeError: 'tuple' object doesn't support item deletion
 
 **2. 튜플 요솟값을 변경하려 할 때**
 
-```
+```python
 >>> t1 = (1, 2, 'a', 'b')
 >>> t1[0] = 'c'
 ```
 
-```
+```python
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: 'tuple' object does not support item assignment
@@ -72,7 +72,7 @@ TypeError: 'tuple' object does not support item assignment
 
 ### **인덱싱하기**
 
-```
+```python
 >>> t1 = (1, 2, 'a', 'b')
 >>> t1[0]
 1
@@ -84,7 +84,7 @@ TypeError: 'tuple' object does not support item assignment
 
 ### **슬라이싱하기**
 
-```
+```python
 >>> t1 = (1, 2, 'a', 'b')
 >>> t1[1:]
 (2, 'a', 'b')
@@ -94,7 +94,7 @@ TypeError: 'tuple' object does not support item assignment
 
 ### **튜플 더하기**
 
-```
+```python
 >>> t1 = (1, 2, 'a', 'b')
 >>> t2 = (3, 4)
 >>> t3 = t1 + t2
@@ -106,7 +106,7 @@ TypeError: 'tuple' object does not support item assignment
 
 ### **튜플 곱하기**
 
-```
+```python
 >>> t2 = (3, 4)
 >>> t3 = t2 * 3
 >>> t3
@@ -117,7 +117,7 @@ TypeError: 'tuple' object does not support item assignment
 
 ### **튜플 길이 구하기**
 
-```
+```python
 >>> t1 = (1, 2, 'a', 'b')
 >>> len(t1)
 4

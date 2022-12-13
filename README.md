@@ -33,4 +33,4 @@
 - [Data types - Tuple](Python/02-4-Data-types-Tuple.md)
 - [Data types - Dictionary](Python/02-5-Data-types-Dictionary.md)
 - [Data types - Set](Python/02-6-Data-types-Set.md)
-
+- [Data types - Bool](Python/02-7-Data-types-Bool.md)

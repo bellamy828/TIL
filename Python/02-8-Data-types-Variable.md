@@ -1,4 +1,4 @@
-# 02-8. Variable(변수)
+# 2-8. Variable(변수)
 
 ```python
 변수 이름 = 변수에 저장할 값

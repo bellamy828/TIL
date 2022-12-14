@@ -38,3 +38,4 @@
 - [Control Statement - If](Python/03-1-Control-Statement-if.md)
 - [Control Statement - While](Python/03-2-Control-Statement-while.md)
 - [Control Statement - For](Python/03-3-Control-Statement-for.md)
+- [Function](Python/04-Function.md)

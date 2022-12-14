@@ -1,4 +1,4 @@
-## 2-1. 숫자형
+# 2-1. 숫자형
 <img width="305" alt="image" src="https://user-images.githubusercontent.com/72433598/205498373-e47a0c2a-cf52-4120-bed9-849ccc79b187.png">
 
 ### **정수형**

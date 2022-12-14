@@ -34,3 +34,4 @@
 - [Data types - Dictionary](Python/02-5-Data-types-Dictionary.md)
 - [Data types - Set](Python/02-6-Data-types-Set.md)
 - [Data types - Bool](Python/02-7-Data-types-Bool.md)
+- [Data types - Variable](Python/02-8-Data-types-Variable.md)

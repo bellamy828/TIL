@@ -42,3 +42,4 @@
 - [input & print](Python/04-2-input-and-print.md)
 - [open](Python/04-3-open.md)
 - [sys](Python/04-4-sys.md)
+- [Class](Python/05-1-Class.md)

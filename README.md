@@ -43,3 +43,8 @@
 - [open](Python/04-3-open.md)
 - [sys](Python/04-4-sys.md)
 - [Class](Python/05-1-Class.md)
+- [Modules](Python/05-2-Modules.md)
+- [Packages](Python/05-3-Packages.md)
+- [Exception](Python/05-4-Exception.md)
+- [Built in Function](Python/05-5-Built-in-Function.md)
+- [Standard Library](Python/05-6-Standard-Library.md)

@@ -51,3 +51,4 @@
 - [3rd-party Library](Python/05-7-Third-party-library.md)
 - [Module - os](Python/06-1-Module-os.md)
 - [Unicode](Python/07-1-Unicode.md)
+- [Closure and Decorator](07-2-Closure-and-Decorator.md)

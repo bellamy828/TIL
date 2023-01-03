@@ -13,10 +13,10 @@
 ```python
 # mod1.py
 def add(a, b):
-return a + b
+		return a + b
 
 def sub(a, b):
-return a-b
+		return a-b
 ```
 
 위와 같이 add와 sub 함수만 있는 파일 mod1.py를 만들고 `C:\doit` 디렉터리에 저장하자.
@@ -85,9 +85,9 @@ from mod1 import *
 ```python
 # mod1.py
 def add(a, b):
-return a+b
+		return a+b
 def sub(a, b):
-return a-b
+		return a-b
 
 print(add(1, 4))
 print(sub(4, 2))
@@ -123,10 +123,10 @@ import mod1을 수행하는 순간 mod1.py 파일이 실행되어 결괏값을 �
 ```python
 # mod1.py
 def add(a, b):
-return a+b
+		return a+b
 
 def sub(a, b):
-return a-b
+		return a-b
 
 if __name__ == "__main__":
 		print(add(1, 4))
@@ -145,9 +145,11 @@ if __name__ == "__main__":
 
 하지만 파이썬 셸이나 다른 파이썬 모듈에서 mod1을 import 할 경우에는 mod1.py의 `__name__` 변수에는 mod1.py의 모듈 이름 값 mod1이 저장된다.
 
-`>>> **import** mod1
+```python
+>>> **import** mod1
 >>> mod1.__name__
-'mod1'`
+'mod1'
+```
 
 ## **클래스나 변수 등을 포함한 모듈**
 
@@ -158,11 +160,11 @@ if __name__ == "__main__":
 PI = 3.141592
 
 class Math:
-def solv(self, r):
-return PI * (r ** 2)
+		def solv(self, r):
+				return PI * (r ** 2)
 
 def add(a, b):
-return a+b
+		return a+b
 ```
 
 ```python

@@ -66,7 +66,7 @@ next() 함수를 호출할 때마다 이터레이터 객체의 요소를 차례�
 1
 2
 3
->>>for i in ia:
+>>> for i in ia:
 ...     print(i)
 ...
 >>>
@@ -83,7 +83,7 @@ next()로 그 값을 한 번 읽으면 그 값을 다시는 읽을 수 없다는
 이터레이터는 클래스에 `__iter__`와 `__next__`라는 두 개의 메서드를 구현하면 만들 수 있다.
 
 ```python
-class MyItertor:
+class MyIterator:
 def __init__(self, data):
         self.data = data
         self.position = 0
@@ -275,11 +275,9 @@ class MyIterator:
 
 ## **제너레이터의 쓰임새**
 
-조금은 이해하기 어려운 제너레이터라는 것은 과연 어디에 활용하면 좋을까? 
-
 제너레이터의 가장 큰 이점은 대량의 데이터를 처리할 때 드러난다는 점을 생각하면 된다. 
 
-다음은 파일을 한 줄씩 읽어서 처리하는 예제이다. 
+다음은 파일을 한 줄씩 읽어서 처리하는 예제이다.
 
 ```python
 with open('bigdata.txt') as f:
@@ -299,7 +297,7 @@ def longtime_job():
     time.sleep(1)
 		return "done"
 
-list_job = iter([longtime_job()for iin range(5)])
+list_job = iter([longtime_job() for i in range(5)])
 print(next(list_job))
 ```
 
@@ -318,7 +316,7 @@ done
 
 리스트를 만들 때 이미 5개의 함수를 모두 실행하므로 5초의 시간이 소요되고 이와 같은 결과를 출력한다.
 
-이번에는 이 예제에 제너레이터 기법을 도입해 보자. 프로그램을 다음과 같이 수정한다.
+이번에는 이 예제에 제너레이터 기법을 도입
 
 ```python
 import time
@@ -328,7 +326,7 @@ def longtime_job():
     time.sleep(1)
 		return "done"
 
-list_job =(longtime_job()for iin range(5))
+list_job =(longtime_job() for i in range(5))
 print(next(list_job))
 ```
 

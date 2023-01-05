@@ -52,3 +52,5 @@
 - [Module - os](Python/06-1-Module-os.md)
 - [Unicode](Python/07-1-Unicode.md)
 - [Closure and Decorator](Python/07-2-Closure-and-Decorator.md)
+- [Iterator and Generator](Python/07-3-Iterator-and-Generator.md)
+- [Type Annotation](Python/07-4-Type-Annotation.md)

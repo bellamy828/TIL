@@ -39,3 +39,6 @@ function factorial (n) {
 3. (n + 1) * n! = (n + 1) * n * (n - 1) * ... 3 * 2 * 1 이다.
 그러므로 이 논리는 참이다.
 ```
+  
+reference
+(https://urclass.codestates.com/)

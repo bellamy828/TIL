@@ -54,3 +54,5 @@
 - [Closure and Decorator](Python/07-2-Closure-and-Decorator.md)
 - [Iterator and Generator](Python/07-3-Iterator-and-Generator.md)
 - [Type Annotation](Python/07-4-Type-Annotation.md)
+- [Regexp - basic](Python/08-1-Regexp-basic.md)
+- [Regexp - advanced](Python/08-2-Regexp-advanced.md)

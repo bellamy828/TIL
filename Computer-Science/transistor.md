@@ -2,7 +2,7 @@
 
 ## 트랜지스터
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1b640a92-3cb8-4825-8102-e9b1a9662234/Untitled.png)
+![image](https://user-images.githubusercontent.com/72433598/211841196-1a4985f3-9316-4e05-a01a-ed939c3ea5fa.png)
 
 - 컴퓨터를 구성하는 가장 기본적인 요소(생물의 근본이 C;탄소인 것 처럼)
 - CPU는 트랜지스터 덩어리
@@ -30,6 +30,11 @@
         - NOT
             - input: 0 → output: 1
             - input: 1 → output: 0
-    - 1bit 가산기(ADD)
-        - 2개의 트랜지스터를 가지고 입력이 서로 같을 때 0, 다를 때 1을 출력하는 XOR(S; 합의 결과) / 입력이 모두 1일 때 1을 출력하는 AND(C;올림수)
-        - 그렇다면 2bit 가산기도 마찬가지로
+    - (논리소자)를 가지고 계산기를 만들 수 있다.
+        - 1bit 가산기(ADD)
+            - 2개의 트랜지스터를 가지고 입력이 서로 같을 때 0, 다를 때 1을 출력하는 XOR(S; 합의 결과) / 입력이 모두 1일 때 1을 출력하는 AND(C;올림수)
+            - 그렇다면 2bit 가산기도 마찬가지로 1bit 가산 결과인 C를 가지고 3번 째 입력으로 넣고 결과가 나옴
+        - 마찬가지로 뺄셈, 곱셈, 나눗셈도 논리소자를 가지고 만들어 낼 수 있게 된다.
+
+  
+  Reference(https://www.youtube.com/watch?v=2Wst0-a4h78)

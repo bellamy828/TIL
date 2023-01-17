@@ -10,18 +10,21 @@
     - 요소를 찾거나 추가하는 작업이 빠름
     - 조회를 자주 해야하는 작업에 많이 사용
 - 단점
-    - 선언하면서 크기를 미리 정해야해서 메모리 낭비나 추가적인 overhead가 발생할 수 있음
+    - 선언하면서 크기를 미리 정해야해서 메모리 낭비나 추가적인 overhead[^1]가 발생할 수 있음
 
+[^1]: 어떤 처리를 하기 위해 들어가는 간접적인 처리 시간 · 메모리 등을 말함  
+예를 들어 A라는 처리를 단순하게 실행한다면 10초 걸리는데, 안전성을 고려하고 부가적인 B라는 처리를 추가한 결과 처리시간이 15초 걸렸다면, 오버헤드는 5초가 된다.  
+(Reference: https://ko.wikipedia.org/wiki/%EC%98%A4%EB%B2%84%ED%97%A4%EB%93%9C)
 ## 시간복잡도
 
-|  | Array |
-| --- | --- |
-| access | O(1) |
+| Operation | Time complexity |  |
+| :---:| :---: | :---: |
+| access | O(1) | index를 가지고 value를 조회하는 작업 |
 | append | O(1) |
 | 마지막 원소 delete | O(1) |
 | insertion | O(n) |
 | deletion | O(n) |
-| search | O(n) |
+| search | O(n) | 요소의 value나 index를 탐색하는 작업 |
 
 <br>
 
@@ -52,9 +55,9 @@
 ### Linked List와 비교했을 때 Dynamic Array의 장점
 
 - 데이터의 접근과 할당의 복잡도가 O(1)으로 상대적으로 빠릅니다.
-    - index 접근할 때에 Array의 첫 요소의 주소값 + offset[^1]으로 random access 하기 때문입니다.
+    - index 접근할 때에 Array의 첫 요소의 주소값 + offset[^2]으로 random access 하기 때문입니다.
 
-[^1]: 컴퓨터 과학에서 배열이나 자료 구조오브젝트 내의 오프셋(offset)은 일반적으로 동일 오브젝트 안에서 오브젝트 처음부터 주어진 요소나 지점까지의 변위차를 나타내는 정수형(Reference:https://ko.wikipedia.org/wiki/오프셋_(컴퓨터_과학))
+[^2]: 컴퓨터 과학에서 배열이나 자료 구조오브젝트 내의 오프셋(offset)은 일반적으로 동일 오브젝트 안에서 오브젝트 처음부터 주어진 요소나 지점까지의 변위차를 나타내는 정수형(Reference:https://ko.wikipedia.org/wiki/오프셋_(컴퓨터_과학))
 
 - 배열의 마지막에 데이터를 추가하거나 삭제하는 것은 상대적으로 빠릅니다. (O(1))
 

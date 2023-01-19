@@ -19,3 +19,7 @@ LIFO; 후입선출, 재귀적인 특징이 있어서 프로그램 개발에 자�
 - 괄호 유효성 검사
 - 웹 브라우저 방문기록(뒤로가기)
 - DFS(깊이우선탐색)
+  
+<br>
+
+Reference(https://www.nossi.dev/interview/cs/dsa#26463dc9-5d74-4f42-9263-aba5ad3c5ca1)

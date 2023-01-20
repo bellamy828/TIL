@@ -55,18 +55,18 @@ FIFO;선입선출 대기열
 
 ```python
 class Queue(obj):
-		def __init__(self):
-				self.oneStack = []
-				self.theOtherStack = []
+    def __init__(self):
+	self.oneStack = []
+	self.theOtherStack = []
 
-		def enqueue(self, element):
-				self.oneStack.append(elemnet)
+    def enqueue(self, element):
+	self.oneStack.append(elemnet)
 
-		def dequeue(self):
-				if not self.theOtherStack:
-						while self.oneStack:
-								self.theOtherStack.append(self.oneStack.pop())
-				return self.theOtherStack.pop()
+    def dequeue(self):
+	if not self.theOtherStack:
+	    while self.oneStack:
+		self.theOtherStack.append(self.oneStack.pop())
+	return self.theOtherStack.pop()
 ```
 
 ### 시간 복잡도

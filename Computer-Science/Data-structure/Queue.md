@@ -77,12 +77,30 @@ class Queue(obj):
     - theOtherStack이 비어있지 않은 경우에는 pop()만 하면 되어서 O(1)
     - 결국 종합해보면 enqueue, dequeue 모두 amortized O(1)
 
+## Queue vs Priority Queue
+
+### 비교
+
+|  | Queue | Priority Queue |
+| --- | --- | --- |
+| 구현 방식 | Array-based, List-based | Array-based, List-based, heap[^2] |
+| 출력 순서 | FIFO | 우선 순위가 높은 데이터 먼저 출력 |
+| 시간복잡도 | enqueue/dequeue → O(1) | push/pop → O(logn) |
+
   
 <br>
 
-Reference([https://www.nossi.dev/interview/cs/dsa#26463dc9-5d74-4f42-9263-aba5ad3c5ca1](https://www.nossi.dev/interview/cs/dsa#26463dc9-5d74-4f42-9263-aba5ad3c5ca1))
+Reference: [https://www.nossi.dev/interview/cs/dsa#26463dc9-5d74-4f42-9263-aba5ad3c5ca1](https://www.nossi.dev/interview/cs/dsa#26463dc9-5d74-4f42-9263-aba5ad3c5ca1)
+
 
 [^1]: Singly Linked list: 데이터들이 한쪽 방향으로만 연결 되어있는 것을 말합니다.  
 데이터가 저장되는 객체를 node라고 하며, 가장 첫번째 node를 head라고 부릅니다.  
 이런 특성 때문에, 데이터 탐색 중에 한번 지나친 node를 찾으려면 다시 head부터 탐색을 해야 합니다.  
 (Reference: [https://codechacha.com/ko/singly-linked-list-java/](https://codechacha.com/ko/singly-linked-list-java/))
+
+[^2]: Heap: 완전 이진 트리의 일종으로 우선순위 큐를 위하여 만들어진 자료구조이며,  
+여러 개의 값들 중에서 최댓값이나 최솟값을 빠르게 찾을 수 있다.  
+힙은 큰 값이 상위 레벨에 있고 작은 값이 하위 레벨에 있다는 정도, 일종의 반정렬 상태(느슨한 정렬 상태) 를 유지한다.  
+간단히 말하면 부모 노드의 키 값이 자식 노드의 키 값보다 항상 큰(작은) 이진 트리를 말한다.  
+힙 트리에서는 중복된 값을 허용한다. (이진 탐색 트리에서는 중복된 값을 허용하지 않는다.)  
+(Reference: [https://gmlwjd9405.github.io/2018/05/10/data-structure-heap.html](https://gmlwjd9405.github.io/2018/05/10/data-structure-heap.html))

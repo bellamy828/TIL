@@ -83,9 +83,9 @@ class Queue(obj):
 
 |  | Queue | Priority Queue |
 | --- | --- | --- |
-| 구현 방식 | Array-based, List-based | Array-based, List-based, heap[^2] |
+| 구현 방식 | Array-based, List-based | Array-based, List-based, **heap**[^2] |
 | 출력 순서 | FIFO | 우선 순위가 높은 데이터 먼저 출력 |
-| 시간복잡도 | enqueue/dequeue → O(1) | push/pop → O(logn) |
+| 시간복잡도 | enqueue/dequeue → O(1) | push/pop → O(logn)(heap으로 구현된 경우) |
 
   
 <br>

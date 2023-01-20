@@ -33,22 +33,22 @@ LIFO; 후입선출, 재귀적인 특징이 있어서 프로그램 개발에 자�
 import queue
 
 class Stack(obj):
-		def __init__(self):
-				self.oneQueue = queue.Queue()
-				self.theOtherQueue = queue.Queue()
+    def __init__(self):
+	self.oneQueue = queue.Queue()
+	self.theOtherQueue = queue.Queue()
 
-		def push(self, element):
-				self.oneQueue.put(element)
+    def push(self, element):
+	self.oneQueue.put(element)
 
-		def pop(self):
-				while self.oneQueue.qsize() > 1:
-						self.theOtherQueue.put(self.oneQueue.get())
+    def pop(self):
+	while self.oneQueue.qsize() > 1:
+		self.theOtherQueue.put(self.oneQueue.get())
 
-				temp = self.oneQueue
-				self.oneQueue = self.theOtherQueue
-				self.theOtherQueue = temp
+	temp = self.oneQueue
+	self.oneQueue = self.theOtherQueue
+	self.theOtherQueue = temp
 
-				return self.theOtherQueue.get()
+	return self.theOtherQueue.get()
 ```
 
 ### 시간복잡도

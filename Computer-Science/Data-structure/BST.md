@@ -1,4 +1,4 @@
-# 6. BST
+# BST
 
 모든 node의 왼쪽 자식 node는 그 부모 노드 보다 작은 값, 오른쪽 자식 node는 그 부모 노드 보다 큰 값을 갖도록 정렬된 Binary Tree[^1]
 

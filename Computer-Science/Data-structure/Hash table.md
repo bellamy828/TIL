@@ -6,22 +6,29 @@ Hash function에 key값을 넣어 얻은 해시값을 위치로 지정하여 key
 
 ## 시간복잡도
 
-- 검색 / 저장 / 삭제 → O(1)
-- worst case -> O(n)
+### 검색 / 저장 / 삭제
 
-## Direct Address Table
+- O(1)
+
+### worst case
+
+- O(n)
+
+## Hash table을 사용하는 이유
+
+### Direct Address Table
 
 - key 값을 index로 두고 value를 해당 index에 저장하는 방식
 - key 값의 숫자 크기가 크면 앞의 무수히 많은 배열 공간이 낭비됨
 - key 값이 숫자 외에 다른 자료형을 가질수 없음
 
-## Hash table
+### 하지만 Hash table은
 
 - (key, value) 데이터 쌍을 저장하기 위해 적합한 자료구조
 - key는 무조건 존재해야하고 중복되는 key는 없어야 한다.
 - 숫자 이외의 자료형 key 값도 hash function을 통해 숫자(index)로 변환한다.
 - hash table을 구성하는 key-value 데이터 쌍을 저장하는 각각의 공간을 slot 또는 bucket이라고 한다.
-
+  - 하지만 미리 저장 공간(slot, bucket)을 확보해야 하기 때문에, 저장 공간이 부족하거나 채워지지 않은 부분이 생겨 공간 효울성이 떨어질 수 있음
 ### collision
 
 - 서로 다른 key의 해시값이 같아 충돌이 생김

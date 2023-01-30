@@ -29,4 +29,7 @@
     - 한 process 내에서 실행되는 동작의 단위
 - process 내에서 stack 영역을 제외한 code, data, heap 영역을 공유한다.
 
+  
+<br>
+
 Reference: [https://www.nossi.dev/interview/cs/os](https://www.nossi.dev/interview/cs/os)

@@ -1,4 +1,4 @@
-# 5. Deadlock
+# Deadlock
 
 둘 이상의 thread가 각기 다른 thread가 점유하고 있는 자원을 서로 기다릴 때, 무한 대기에 빠지는 상황
 

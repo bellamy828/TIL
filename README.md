@@ -10,19 +10,58 @@
 ### Categories
 
 * [Algorithm](#Algorithm)
+* [Data structure](#Data-structure)
+* [Database](#Database)
 * [Deploy](#Deploy)
+* [Intro](#Intro)
+* [OS](#OS)
 * [Python](#Python)
+
 
 ---
 
+### Intro
+
+- [What is a computer](Computer-science/Intro/What-is-a-computer.md)
+
 ### Algorithm
 
-- [Big-O](Algorithm/Big-O.md)
-- [How to study algorithms](Algorithm/How-to-study-algorithms.md)
+- [Big-O](Computer-science/Algorithm/Big-O.md)
+- [How to study algorithms](Computer-science/Algorithm/How-to-study-algorithms.md)
+
+### Data structure
+
+- [What is Memory and Data structure](Computer-science/Data-structure/0-What-is-memory-and-data-structure.md)
+- [Array](Computer-science/Data-structure/Array.md)
+- [BST](Computer-science/Data-structure/BST.md)
+- [Hash Table](Computer-science/Data-structure/Hash-table.md)
+- [Heap](Computer-science/Data-structure/Heap.md)
+- [Linked-list](Computer-science/Data-structure/Linked-list.md)
+- [Queue](Computer-science/Data-structure/Queue.md)
+- [Stack](Computer-science/Data-structure/Stack.md)
+
+### Database
+
+- [Join](Computer-science/Database/Join.md)
+- [N:M Relation](Computer-science/Database/N:M-Relation.md)
+- [Primary key](Computer-science/Database/Primary-key.md)
+- [RDB vs NoSQL](Computer-science/Database/RDB-vs-NoSQL.md)
+
 
 ### Deploy
 
 - [Build And Deploy](Deploy/Build-and-Deploy.md)
+
+### OS
+
+- [Deadlock](Computer-science/OS/Deadlock.md)
+- [Multi process & Multi thread.md](Computer-science/OS/Multi-process-&-Multi-thread.md)
+- [Paging](Computer-science/OS/Paging.md)
+- [Process](Computer-science/OS/Process.md)
+- [Segmentation](Computer-science/OS/Segmentation.md)
+- [Synchronization problem](Computer-science/OS/Synchronization-problem.md)
+- [Thread](Computer-science/OS/Thread.md)
+- [Virtual memory](Computer-science/OS/Virtual-memory.md)
 
 ### Python
 

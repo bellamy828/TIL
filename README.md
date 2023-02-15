@@ -42,6 +42,7 @@
 
 ### Database
 
+- [Deadlock](Computer-science/Database/Deadlock.md)
 - [Join](Computer-science/Database/Join.md)
 - [N:M Relation](Computer-science/Database/N:M-Relation.md)
 - [Primary key](Computer-science/Database/Primary-key.md)

@@ -9,7 +9,6 @@
 
 ### Categories
 
-* [#Intro](##Intro)
 * [Algorithm](#Algorithm)
 * [Data structure](#Data-structure)
 * [Database](#Database)

@@ -43,6 +43,7 @@
 ### Database
 
 - [Deadlock](Computer-science/Database/Deadlock.md)
+- [Index](Computer-science/Database/Index.md)
 - [Join](Computer-science/Database/Join.md)
 - [N:M Relation](Computer-science/Database/N:M-Relation.md)
 - [Primary key](Computer-science/Database/Primary-key.md)
@@ -56,7 +57,7 @@
 ### Network
 
 - [OSI 7 & TCP/IP 4 Layers](Computer-science/Network/OSI-7-and-TCP-IP-4-Layers.md)
-- [TCP 3(4) way Handshake](Computer-science/Network/TCP-3(4)-way-handshake.md)
+- [TCP 3(4) Way Handshake](Computer-science/Network/TCP-3(4)-way-handshake.md)
 - [TCP vs UDP](Computer-science/Network/TCP-vs-UDP.md)
 
 ### OS

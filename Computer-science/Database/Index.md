@@ -19,6 +19,19 @@
 - B-Tree, B+Tree, Hash, Bitmap으로 구현될 수 있고 많은 데이터 베이스 시스템에서 B+Tree구조를 갖고 있다.
 - 특정 Column(Attribute)의 값을 기준으로 정렬하여 속성 값을 Search-key 값, 데이터의 물리적 위치를 저장한 값을 Pointer라고 하고 이렇게 정렬한 Index를 별도의 파일에 저장한다.
 
+### Index의 효과적인 사용
+
+- 조회(SELECT ~ WHERE ~ )에 자주 사용되는 Column에 대해 Index를 생성하는 것이 좋다.
+- 데이터 수정 빈도가 낮을수록 적합하다.
+    - insert / update / delete 작업 시, index 정렬을 매번 다시 해야한다.
+- 데이터의 Cardinality가 높은(중복이 적은) Column에서 더 효율적이다.
+    - == 선택도가 낮은 Column이 유리하다.(보통 5 ~ 10% 이내)
+- 데이터의 양이 많을 수록 성능 향상 효과가 크다.
+    - 데이터가 적다면 Index의 혜택 보다 손해가 더 클 수 있다.
+- Join 조건으로 자주 사용되는 Column에도 효과적이다.
+- Table에 Index가 너무 많으면 데이터 수정에 소요되는 시간이 지연될 수 있다.
+    - Table 당 4~5개 권장?
+
 ### Index의 단점
 
 - 추가 저장 공간 필요

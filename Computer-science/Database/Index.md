@@ -24,7 +24,7 @@
 - 조회(SELECT ~ WHERE ~ )에 자주 사용되는 Column에 대해 Index를 생성하는 것이 좋다.
 - 데이터 수정 빈도가 낮을수록 적합하다.
     - insert / update / delete 작업 시, index 정렬을 매번 다시 해야한다.
-- 데이터의 Cardinality가 높은(중복이 적은) Column에서 더 효율적이다.
+- 데이터의 Cardinality[^2]가 높은(중복이 적은) Column에서 더 효율적이다.
     - == 선택도가 낮은 Column이 유리하다.(보통 5 ~ 10% 이내)
 - 데이터의 양이 많을 수록 성능 향상 효과가 크다.
     - 데이터가 적다면 Index의 혜택 보다 손해가 더 클 수 있다.
@@ -61,9 +61,12 @@
 
 [^1]: B+Tree: 동작 방식은 [B-Tree](https://ko.wikipedia.org/wiki/B_%ED%8A%B8%EB%A6%AC)와 유사하지만, B+Tree의 Leaf node는 Linked list 형태를 갖고 Binary search가 가능하다. 따라서 검색의 시간복잡도가 낮다.
 
+[^2]: cardinality: 카디널리티는 전체 행에 대한 특정 컬럼의 중복 수치를 나타내는 지표, 중복도가 ‘낮으면’ 카디널리티가 ‘높다’고 표현한다. 카디널리티는 상대적인 개념이다.
+
 <br>
 
 Reference
 
 - [https://velog.io/@emplam27/자료구조-그림으로-알아보는-B-Plus-Tree](https://velog.io/@emplam27/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-%EA%B7%B8%EB%A6%BC%EC%9C%BC%EB%A1%9C-%EC%95%8C%EC%95%84%EB%B3%B4%EB%8A%94-B-Plus-Tree)
+- https://itholic.github.io/database-cardinality/
 - https://www.nossi.dev/interview/cs/db

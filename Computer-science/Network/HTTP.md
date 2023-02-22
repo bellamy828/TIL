@@ -17,6 +17,20 @@
         - Cookie, Session, Token등을 활용해 정보 저장, 로그인 문제를 해결할 수 있다.
 - 정보를 Text 형식으로 주고받기 때문에 intercept 데이터 유출을 막기 위해 암호화를 추가한 HTTPS가 도입되었다.
 
+### HTTP Requsest Method
+
+- GET: 리소스 조회
+    - Client가 Server에게 정보를 요청할 때 사용하는 Method
+    - Parameter / Query string(Key-value pair)[^1]을 포함하여 전송한다.
+    - Cache가 가능해서 Server에 GET 요청을 하면 Browser가 그 결과를 저장하고 이후 동일한 요청을 저장된 값으로 가져올 수 있다.
+- POST: 요청 데이터 처리(주로 생성)
+    - Client가 데이터를 Body에 담아 전송, Server가 해당 요청을 처리하도록 한다.
+    - 생성 외에도 변경이나 특정 프로세스를 처리하기도 한다.
+- PUT: 리소스를 아예 대체, 해상 리소스가 없으면 생성
+- PATCH: 리소스의 일부분을 수정
+
+[^1]:Parmeter / Query string: 일반적으로는 파라미터는 특정 id 나 이름을 가지고 조회를 할 때 사용하고, 쿼리의 경우엔 어떤 키워드를 검색하거나, 요청을 할 때 필요한 옵션을 전달 할 때 사용된다
+
 <br>
 
 Reference: https://www.nossi.dev/interview/cs/network

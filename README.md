@@ -56,10 +56,10 @@
 
 ### Network
 
+- [HTTP](Computer-science/Network/HTTP.md)
 - [OSI 7 & TCP/IP 4 Layers](Computer-science/Network/OSI-7-and-TCP-IP-4-Layers.md)
 - [TCP 3(4) Way Handshake](Computer-science/Network/TCP-3(4)-way-handshake.md)
 - [TCP vs UDP](Computer-science/Network/TCP-vs-UDP.md)
-- [HTTP](Computer-science/Network/HTTP.md)
 
 ### OS
 

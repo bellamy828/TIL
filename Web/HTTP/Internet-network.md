@@ -50,6 +50,34 @@
 - Application에서 추가적으로 최적화가 가능하다.
     - 기존에 신뢰성 있지만 다소 무거운 TCP 기반의 인터넷 통신에 비해, 더 가볍고 효율적으로 최적화가 가능해 최근 HTTP/3 기반 개발에서 각광 받고 있다.
 
+## Port
+
+### 필요성
+
+- 만약 Client가 2개 이상의 HTTP 통신 작업을 한다면 각각의 응답이 어느 서버에서 왔는지, 어떤 프로세스에 해당하는지 구분해야 하는데, IP만 가지고는 구분할 수 없다.
+- 따라서 TCP Segment에 출발지 Port, 목적지 Port 정보를 담는다.
+
+### Port number
+
+- 0 ~ 65535 까지 할당 가능하다.
+- 0 ~ 1023 까지는 잘 알려진 포트로 사용하지 않는 것이 좋다.
+    - 20, 21 → [FTP(File Transfer Protocol)](https://ko.wikipedia.org/wiki/%ED%8C%8C%EC%9D%BC_%EC%A0%84%EC%86%A1_%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C)
+    - 23 → [TELNET](https://ko.wikipedia.org/wiki/%ED%85%94%EB%84%B7)
+    - 80 → HTTP
+    - 443 → HTTPS
+
+## [DNS(Domain Name System)](https://ko.wikipedia.org/wiki/%EB%8F%84%EB%A9%94%EC%9D%B8_%EB%84%A4%EC%9E%84_%EC%8B%9C%EC%8A%A4%ED%85%9C)
+
+### 필요성
+
+- IP Address는 기억하기 어렵고, 변경되었을 경우에 원하는 Server로 요청을 보낼 수 없게 된다.
+
+### 개념
+
+- 흔히 전화번호부에 비유한다.
+- 사람이 이해하기 쉬운 Domain name을 IP address로 바꾸거나 그 반대의 변환을 한다.
+- DNS Server에 Domain을 등록하여 사용할 수 있다.
+
 [^1]:Packet: package + bucket
 
 <br>

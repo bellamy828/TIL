@@ -60,9 +60,9 @@
         - start-line
             - Request Message
                 
-                > GET /search?q=http&hl=ko HTTP/1.1
-                Host: www.google.com
-                > 
+                > GET /search?q=http&hl=ko HTTP/1.1<br>
+                Host: www.google.com<br>
+                > <br>
                 - HTTP Method  + ‘ ‘ + request-target + ‘ ‘ + HTTP-version + CRLF
                     - HTTP Method
                         - 종류
@@ -75,13 +75,14 @@
                         - “/”로 시작하는 경로
             - Response Message
                 
-                > HTTP/1.1 200 OK
-                Content-Type: text/html;charset-UTF-8
+                > HTTP/1.1 200 OK<br>
+                Content-Type: text/html;charset-UTF-8<br>
                 Content-Length: 3000
-                
-                <html>
-                  <body>…</body>
-                </html>
+                > <br>
+                > 
+                > \<html><br>
+                \<body>…\</body><br>
+                \</html>
                 > 
                 - HTTP-version + ‘ ’ + status-code + ‘ ’ reason-phrase CRLF
                     - reason-phrase

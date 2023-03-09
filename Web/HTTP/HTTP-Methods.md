@@ -67,6 +67,44 @@
         - 실제로는 GET / HEAD 정도만 캐시로 사용한다.
         - POST / PATCH는 본문 내용까지 캐시 키로 고려해야 하므로 구현이 쉽지 않다.
 
+## HTTP Method 활용
+
+### HTTP Request data transfer
+
+- Query parameter를 통한 데이터 전송(GET)
+    - 정적 데이터 조회
+        - 이미지, 정적 텍스트 문서는 Query parameter 없이 Resource 경로로 단순하게 조회 가능하다.
+    - 동적 데이터 조회
+        - Query parameter를 사용해서 조회에 필요한 데이터를 전달한다.
+        - 주로 검색, 게시판 정렬, 필터 기능에 사용한다.
+- Message Body를 통한 데이터 전송(POST / PUT / PATCH)
+    - HTML Form 데이터 전송
+        - GET / POST methods만 지원한다.
+        - 웹 브라우저가 <form> tag의 action(uri)과 method(HTTP Method) attribute를 토대로 HTTP message를 생성 후 전송한다.
+            - method를 get으로 설정하면 GET 요청 또한 가능하다.
+        - Content-Type
+            - `application/x-www-form-urlencode(default)`
+                - form의 내용을 message body에 key=value pairs 형태로 담아 전송한다.
+                - 전송하는 데이터를 url encoding 처리한다.
+                    - ex. abc김 → abc%EA%B9…
+            - `multipart/form-data`
+                - text 뿐만 아니라 image, audio 등 binary datas를 같이 전송할 때 사용한다.
+                    - ex. 파일 업로드
+
+### HTTP API data transfer
+
+- Server to server
+    - 백엔드 시스템 통신
+- Application Client
+    - iOS, Android
+- Web Client
+    - HTML에서 Form 전송 대신 JS를 통한 통신에 사용(AJAX)
+        - ex. React, Vue와 같은 Web client API 통신
+- 주요 Methods
+    - POST / PUT / PATCH → Messgae Body에 데이터를 담아 전송한다.
+    - GET → Query parameter로 데이터를 전송한다.
+- Content-Type: application/json을 주로 사용한다.
+
 <br>
 
 Reference: https://www.inflearn.com/course/lecture?courseSlug=http-%EC%9B%B9-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC

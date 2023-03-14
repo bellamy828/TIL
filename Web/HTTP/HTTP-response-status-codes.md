@@ -78,6 +78,12 @@
 - 302와 기능은 같다.
 - Redirect 할 때, Request method가 GET으로 변경한다.
 
+### 304 Not Modified
+
+- Client에게 Resource가 수정되지 않았다고 알려주고, Local PC에 저장된 Cache를 재사용하도록 한다.(Cache로 Redirect)
+- Local Cache를 사용하도록 해야하므로 Response Message Body를 포함하면 안된다.
+- 조건부 GET, HEAD 요청할 때에 사용한다.
+
 ## 4xx: Client Error
 
 ## 5xx: Server Error

@@ -83,3 +83,7 @@
     - 컨트롤 URI를 사용한다.
         - 동사로 된 Resource 경로를 사용하여 제약을 해결한다.
         - POST /members/new, POST /members/edit, POST members/delete…
+
+<br>
+
+Reference: https://www.inflearn.com/course/lecture?courseSlug=http-%EC%9B%B9-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC

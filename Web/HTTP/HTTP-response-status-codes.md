@@ -6,6 +6,8 @@
 
 요청을 받고 처리중
 
+<br>
+
 ## 2xx: Successful
 
 요청 정상 처리 완료
@@ -29,6 +31,8 @@
     - ex. 웹 문서 편집기의 save 기능
         - save 버튼 누른 후 확인할 내용이 없고, 같은 화면을 유지한다.
         - 이 때 응답 코드 204만으로 요청 성공을 인식할 수 있다.
+
+<br>
 
 ## 3xx: Redirection
 
@@ -84,9 +88,49 @@
 - Local Cache를 사용하도록 해야하므로 Response Message Body를 포함하면 안된다.
 - 조건부 GET, HEAD 요청할 때에 사용한다.
 
+<br>
+
 ## 4xx: Client Error
 
+Client의 잘못된 요청, 문법 등으로 Server가 요청을 수행할 수 없는 상태이며, 재시도 또한 분명 실패한다.
+
+### 400 Bad Request
+
+- Client 잘못으로 요청 Parameter, API 스펙이 맞지 않는 상태이다.
+
+### 401 Unauthorized
+
+- Authentication(인증)이 되지 않은 상태로, 응답에 WWW-Authenticate header와 함께 인증 방법을 설명해야 한다.
+- Authentication vs Authorization
+    - Authentication: Client가 누구인지 확인, 로그인
+    - Authorization: 권한 부여, 로그인 하여 누구인지 확인하고, 접근 권한등의 인가
+
+### 403 Forbidden
+
+- 주로 인증 자격 증명은 있지만, 접근 권한이 불충분한 경우
+    - ex. admin 등급이 아닌 사용자가 로그인은 했지만, Admin 등급의 resource에 접근하는 경우
+
+### 404 Not found
+
+- 접근하고자 하는 Resource가 Server에 없는 상태
+- 또는 Client가 권한이 부족한 Resource에 접근, 해당 Resource를 숨기고 싶을 때
+
+<br>
+
 ## 5xx: Server Error
+
+Server에 문제가 있기 때문에 재요청 후에는 성공할 수 도 있다.
+
+### 500 Internal Server Error
+
+- 서버 내부 문제로 오류가 발생했을 때, 애매한 상황에 많이 사용되는 코드이다.
+- 로직에 문제가 생기거나 쿼리, DB 문제등의 기술적인 문제에 사용해야한다.
+- 미성년자 접근 권한이나 그외 상식적으로 잘못된 요청에 대한 응답으로 사용하면 안된다.
+
+### 503 Service Unavailable
+
+- Server의 일시적인 과부하 또는 예정된 작업으로 잠시 요청을 처리할 수 없는 상태
+- Retry-After header-field로 얼마나 걸리는지 보낼 수도 있다.
 
 <br>
 

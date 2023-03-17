@@ -45,6 +45,45 @@
     - byte 단위
     - Transfer-Encoding을 사용하면 Content-Length를 사용하면 안된다.
 
+### **Content negotiation**
+
+- Client가 Server에게 응답 받을 표현에 대해서 협상하는 것으로 Request에서만 사용한다.
+- Accept: Client가 선호하는 Media type
+    - 구체적인 것이 우선이다.
+        
+        > GET /event<br>
+        Accept-Language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7
+        > 
+        1. text/plain;format-flowed
+        2. text/plain
+        3. text/*
+        4. */*
+    - 구체적인 값 끼리 다시 우선순위를 부여한다.
+        
+        
+        | Media type | quality |
+        | --- | --- |
+        | text/html;level=1 | 1 |
+        | text/html | 0.7 |
+        | text/plain | 0.3 |
+        | image/jpeg | 0.5 |
+        | text/html;level=2 | 0.4 |
+        | text/html;level=3 | 0.7 |
+- Accept-Charset: Client가 선호하는 문자 인코딩
+- Accept-Encoding: Client가 선호하는 압축 인코딩
+- Accept-Language: Clinet가 선호하는 자연 언어
+    - Quality Values(q)를 사용한다.
+    - 0~1, 클수록 높은 우선순위
+    - 1은 생략한다.
+        
+        > GET /event<br>
+        Accept-Language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7
+        > 
+        1. ko-KR;q=1(q 생략)
+        2. ko;q=0.9
+        3. en-US;q=0.8
+        4. en;q=0.7
+
 <br>
 
 Reference: https://www.inflearn.com/course/http-%EC%9B%B9-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/

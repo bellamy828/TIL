@@ -31,6 +31,32 @@ Client Browser Cache에 저장된 데이터가 Server의 데이터와 같은지 
     - Date 기반의 로직을 사용한다.
         - 실질적인 수정이 이루어지지 않더라도 로그가 남아서 마지막 수정일이 변경된 경우 의도치 않게 변경 없는 데이터를 다시 전송하게 될 수도 있다.
 
+### Etag(Entity Tag)
+Etag header의 값이 같으면 cache를 유지/재활용, 다르면 다시 다운로드 한다.
+
+- 검증 방법
+    - 캐시용 데이터에 임의의 고유한 버전을 부여하는 방법
+        - ex. ETag: “v1.0”, ETag: “a2fjjfqkjfkj3”
+    - Hash를 활용하여 데이터가 실질적인 데이터가 변경되었을 때 해시값이 달라지도록 하는 방법
+- 검증 과정
+    1. Cache에 저장된 데이터의 eTag 정보를 확인하여 Request headers에 if-None-Match에 Etag 값을 기재하여 요청한다. 
+    2. Sever가 if-None-Match 값을 확인하여 Server의 ETag와 같으면 304 Not Modified, body를 비워서 응답한다.
+        - Server의 ETag 값과 다르면 200 OK, 모든 데이터를 body에 담아 전송한다.
+- 장점
+    - Client는 단순히 ETag 값을 Server에 전송하기만 하면 되고, Server는 Cache 제어 로직을 온전히 관리할 수 있다.
+- 캐시 제어 헤더
+    - Cache-Control
+        - max-age: 캐시 유효 시간(초)
+        - no-cache: 데이터는 캐시할 수 있지만, 항상 Origin server에 검증하고 사용한다.
+        - no-store: 보안이 중요한 데이터이기 때문에 저장하면 안된다.
+    - Pragma
+        - HTTP 1.0 하위 호환으로 현재는 사용하지 않는다.
+    - Expires
+        - 캐시 만료일을 정확한 날짜로 지정한다.
+        - HTTP 1.0 부터 사용한다.
+        - 더 유연한 하게 시간을 조정할 수 있는 Cache-Control: max-age 사용을 권장한다.
+            - 혼용시 Expires는 무시한다.
+
 <br>
 
 Reference: https://www.inflearn.com/course/http-%EC%9B%B9-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC#

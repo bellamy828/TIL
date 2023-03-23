@@ -57,6 +57,19 @@ Etag header의 값이 같으면 cache를 유지/재활용, 다르면 다시 다�
     - 더 유연한 하게 시간을 조정할 수 있는 Cache-Control: max-age 사용을 권장한다.
         - 혼용시 Expires는 무시한다.
 
+### [Proxy](https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9D%EC%8B%9C_%EC%84%9C%EB%B2%84)
+
+Origin Server와 물리적으로 먼 곳에 위치한 Client 권역에 구축한 Server로 특정 국가, 지역에 좀 더 빠른 접근이 가능하게 한다.
+
+- Cache-Control: public
+    - 응답이 public cache에 저장되어도 된다.
+- Cache-Control: private
+    - 해당 사용자만을 위한 응답, private 캐시에 저장하는 것이 기본값
+- Cache-Control: s-maxage
+    - Proxy Cache에만 적용되는 max-age
+- Age:60
+    - Origin Server에서 응답 후 Proxy caceh 내에 머문 시간(초)
+
 <br>
 
 Reference: https://www.inflearn.com/course/http-%EC%9B%B9-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC#

@@ -70,6 +70,15 @@ Origin Server와 물리적으로 먼 곳에 위치한 Client 권역에 구축한
 - Age:60
     - Origin Server에서 응답 후 Proxy caceh 내에 머문 시간(초)
 
+### 캐시 무효화
+
+- Cache-Control: no-cache
+  - 데이터는 캐시해도 되지만, 항상 Origin Sever에 검증하고 사용한다.
+- Cache-Control: no-store
+- Cache-Control: must-revalidate
+- Pragama: no-cache
+  - HTTP 1.0 하위 호환
+
 <br>
 
 Reference: https://www.inflearn.com/course/http-%EC%9B%B9-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC#

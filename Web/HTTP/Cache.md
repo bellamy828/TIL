@@ -75,7 +75,12 @@ Origin Server와 물리적으로 먼 곳에 위치한 Client 권역에 구축한
 - Cache-Control: no-cache
   - 데이터는 캐시해도 되지만, 항상 Origin Sever에 검증하고 사용한다.
 - Cache-Control: no-store
+  - 데이터에 민감한 정보가 있으므로 저장하면 안된다.
 - Cache-Control: must-revalidate
+  - 캐시 유효시간이 있다면 캐시를 사용한다. 
+  - 캐시 만료 이후 최초로 조회할 때 Origin Sever에 검증해야 한다.
+  - Origin Server에 접근할 수 없을 때 반드시 오류가 발생해야 한다.(504 Gateway Timeout)
+
 - Pragama: no-cache
   - HTTP 1.0 하위 호환
 
